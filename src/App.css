@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.Content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: rgb(15, 6, 56);
+  width: 100vw;
+  height: 100%;
+
+}
+
+.Left {
+  background-color: rgb(131, 10, 101);
+  width: 50%;
+  height: 100%;
+}
+
+.Right {
+  background-color: rgb(90, 5, 40);
+  width: 50%;
+  height: 100%;
+}
+
+
