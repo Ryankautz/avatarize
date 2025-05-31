@@ -1,10 +1,9 @@
 import CustomHeader from './components/CustomHeader/CustomHeader.jsx'
 import './App.css'
-import Filtro from './components/Filtro.jsx'
+import Filtro from './components/Filtro/Filtro.jsx'
 
 function App() {
   
-
   return (
     <div className='Page'>
       <CustomHeader/>
@@ -21,4 +20,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
