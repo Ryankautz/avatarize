@@ -232,15 +232,9 @@ const Filtro = () => {
   };
 
   return (
+    <div className="container">
     <form
-      onSubmit={handleSubmit}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "10px",
-        width: "300px",
-      }}
-      >
+      onSubmit={handleSubmit} className="filtro">
       <label>
         Idade:
         <input
@@ -249,11 +243,12 @@ const Filtro = () => {
           max={90}
           value={age}
           onChange={(e) => setAge(e.target.value)}
+          className="age"
         />
       </label>
       <label>
         Gênero:
-        <select value={gender} onChange={(e) => setGender(e.target.value)}>
+        <select className="gender" value={gender} onChange={(e) => setGender(e.target.value)}>
           <option value="">Selecione</option>
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
@@ -261,7 +256,7 @@ const Filtro = () => {
       </label>
       <label>
         Nacionalidade:
-        <select value={origin} onChange={(e) => setOrigin(e.target.value)}>
+        <select className="origin" value={origin} onChange={(e) => setOrigin(e.target.value)}>
           <option value="">Selecione um país</option>
           {countries.map((country) => (
             <option key={country} value={country}>
@@ -276,10 +271,12 @@ const Filtro = () => {
           type="text"
           value={profession}
           onChange={(e) => setProfession(e.target.value)}
+          className="profession"
         />
       </label>
       <button type="submit">Enviar</button>
     </form>
+    </div>
   );
 };
 
