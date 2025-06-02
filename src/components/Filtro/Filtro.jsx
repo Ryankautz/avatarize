@@ -235,8 +235,8 @@ const Filtro = () => {
     <div className="container">
     <form
       onSubmit={handleSubmit} className="filtro">
-      <label>
-        Idade:
+      <label className="la-age">
+        Idade: <br />
         <input
           type="number"
           min={18}
@@ -246,16 +246,16 @@ const Filtro = () => {
           className="age"
         />
       </label>
-      <label>
-        Gênero:
+      <label className="la-gen">
+        Gênero: <br />
         <select className="gender" value={gender} onChange={(e) => setGender(e.target.value)}>
           <option value="">Selecione</option>
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
         </select>
       </label>
-      <label>
-        Nacionalidade:
+      <label className="la-origin">
+        Nacionalidade: <br />
         <select className="origin" value={origin} onChange={(e) => setOrigin(e.target.value)}>
           <option value="">Selecione um país</option>
           {countries.map((country) => (
@@ -265,8 +265,9 @@ const Filtro = () => {
           ))}
         </select>
       </label>
-      <label>
+      <label className="la-prof">
         Profissão:
+        <br />
         <input
           type="text"
           value={profession}
@@ -274,7 +275,7 @@ const Filtro = () => {
           className="profession"
         />
       </label>
-      <button type="submit">Enviar</button>
+      <button className="button" type="submit">Enviar</button>
     </form>
     </div>
   );

@@ -6,7 +6,7 @@ class CustomHeader extends Component {
     render() { 
         return (
             <header>
-                <p>Persona Hub</p>
+                <p>Avatarize</p>
                 
             </header>
         );
