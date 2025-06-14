@@ -244,6 +244,7 @@ const Filtro = () => {
           value={age}
           onChange={(e) => setAge(e.target.value)}
           className="age"
+          placeholder="Digite sua idade..."
         />
       </label>
       <label className="la-gen">
@@ -273,9 +274,10 @@ const Filtro = () => {
           value={profession}
           onChange={(e) => setProfession(e.target.value)}
           className="profession"
+          placeholder="Digite sua profissão..."
         />
       </label>
-      <button className="button" type="submit">Enviar</button>
+      <button className="button" type="submit">Gerar Persona</button>
     </form>
     </div>
   );

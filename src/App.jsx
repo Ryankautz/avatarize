@@ -12,7 +12,7 @@ function App() {
           <Filtro/>
         </div>
         <div className='Right'>
-
+          
         </div>
       </div>
       {/* <CustomFooter/> */}
