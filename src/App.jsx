@@ -1,6 +1,7 @@
 import CustomHeader from './components/CustomHeader/CustomHeader.jsx'
 import './App.css'
 import Filtro from './components/Filtro/Filtro.jsx'
+import Resultado from './components/Resultado/Resultado.jsx'
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
           <Filtro/>
         </div>
         <div className='Right'>
-          
+          <Profile/>
         </div>
       </div>
       {/* <CustomFooter/> */}

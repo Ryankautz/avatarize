@@ -6,7 +6,7 @@ class CustomHeader extends Component {
     render() { 
         return (
             <header>
-                <p>Avatarize</p>
+                <h2>Avatarize</h2>
                 
             </header>
         );
