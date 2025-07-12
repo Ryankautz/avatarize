@@ -1,0 +1,45 @@
+.container-right {
+    box-shadow: 0px 0px 40px 0px #50e3c2;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.photo-profile img {
+    object-fit: cover;
+    width: 100px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.details p {
+    margin: 0;
+    text-align: start;
+}
+ 
+.biography {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.biography h3 {
+    margin: 0;
+}
