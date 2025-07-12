@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Filtro.css";
 
-const Filtro = () => {
+function Filtro({onSubmit}) {
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
   const [origin, setOrigin] = useState("");
@@ -216,13 +216,8 @@ const Filtro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Formulário enviado");
-    console.log("Idade:", age);
-    console.log("Gênero:", gender);
-    console.log("Nacionalidade:", origin);
-    console.log("Profissão:", profession);
-
-    // fazer requisição daqui pra baixo
+    
+    onSubmit({ age, gender, origin, profession });
 
     // Limpar os campos
     setAge("");
@@ -277,7 +272,7 @@ const Filtro = () => {
           placeholder="Digite sua profissão..."
         />
       </label>
-      <button className="button" type="submit">Gerar Persona</button>
+      <button className="button" type="submit" onClick={handleSubmit}>Gerar Persona</button>
     </form>
     </div>
   );
