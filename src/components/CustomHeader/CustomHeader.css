@@ -1,5 +1,6 @@
 header{
     position: fixed;
+    padding-left: 20px;
     width: 100%;
     min-height: 80px;
     top: 0;
@@ -8,13 +9,31 @@ header{
     opacity: 1;
     flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
+.login-button {
+    margin-right: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2A2F4F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 h2 {
+    margin-left: 20px;
     font-family: Montserrat;
     font-weight: 800;
     font-size: 30px;
     color: #2A2F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -7,7 +7,7 @@ class CustomHeader extends Component {
         return (
             <header>
                 <h2>Avatarize</h2>
-                
+                <button className='login-button'>Login</button>
             </header>
         );
     }
